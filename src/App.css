@@ -1,0 +1,9 @@
+:root {
+  --fc-button-text-color: rgb(111, 107, 149);
+  --fc-button-bg-color: #fbfbfb;
+  --fc-button-border-color: #2C3E50;
+  --fc-button-hover-bg-color: #1e2b37;
+  --fc-button-hover-border-color: #1a252f;
+  --fc-button-active-bg-color: #000000;
+  --fc-button-active-border-color: #151e27;
+}

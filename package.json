@@ -1,0 +1,37 @@
+{
+  "name": "copest",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fullcalendar/bootstrap": "^5.11.3",
+    "@fullcalendar/core": "^5.11.3",
+    "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
+    "@fullcalendar/list": "^5.11.3",
+    "@fullcalendar/moment": "^5.11.3",
+    "@fullcalendar/react": "^5.11.2",
+    "@fullcalendar/timegrid": "^5.11.3",
+    "bootstrap": "4",
+    "inferno": "^8.0.3",
+    "inferno-bootstrap": "^7.3.2",
+    "inferno-create-element": "^8.0.3",
+    "inferno-scripts": "7.0.4",
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build",
+    "test": "inferno-scripts test",
+    "eject": "inferno-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "inferno-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
