@@ -15,6 +15,7 @@
     "inferno": "^8.0.3",
     "inferno-bootstrap": "^7.3.2",
     "inferno-create-element": "^8.0.3",
+    "inferno-router": "^8.0.3",
     "inferno-scripts": "7.0.4",
     "moment": "^2.29.4",
     "react": "^18.2.0"
