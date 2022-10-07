@@ -6,11 +6,11 @@ import listPlugin from '@fullcalendar/list';
 import momentPlugin, { toMoment } from '@fullcalendar/moment'
 import moment from 'moment'
 
-const MyComponent = () => (
+const MyCalendar = () => (
   <div id='calendar'></div>
 );
 
-MyComponent.defaultHooks = {
+MyCalendar.defaultHooks = {
   onComponentDidMount() {
     var calendarEl = document.getElementById('calendar');
 
@@ -45,4 +45,4 @@ MyComponent.defaultHooks = {
   }
 }
 
-export default MyComponent;
+export default MyCalendar;

@@ -1,83 +1,77 @@
 export const Text = (props) => (
   <div>
-    <label for="email">Email:</label>
-    <input type="text" id="mail" name="user_email" />
+    <label for={props.id}>{props.text}</label>
+    <input type="text" {...props} />
   </div>
 )
 
 export const Password = (props) => (
   <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="user_password" />
+    <label for={props.id}>{props.text}</label>
+    <input type="password" {...props} />
   </div>
 )
 
 export const Date = (props) => (
-  <input type="date" id="name" name="user_name" />
+  <input type="date" {...props} />
 )
 
 export const Datetime = (props) => (
-  <input type="datetime" id="name" name="user_name" />
+  <input type="datetime" {...props} />
 )
 
 export const Email = (props) => (
   <div>
-    <label for="email">Email:</label>
-    <input type="email" id="mail" name="user_email" />
+    <label for={props.id}>{props.text}</label>
+    <input type="email" {...props} />
   </div>
 )
 
 export const Number = (props) => (
-  <input type="number" id="name" name="user_name" />
+  <input type="number" {...props} />
 )
 
 export const Search = (props) => (
-  <input type="search" id="name" name="user_name" />
+  <input type="search" {...props} />
 )
 
 export const Tel = (props) => (
-  <input type="tel" id="name" name="user_name" />
+  <input type="tel" {...props} />
 )
 
 export const Time = (props) => (
-  <input type="time" id="name" name="user_name" />
+  <input type="time" {...props} />
 )
 
 export const Url = (props) => (
-  <input type="url" id="name" name="user_name" />
+  <input type="url" {...props} />
 )
 
 export const Textarea = (props) => (
   <div>
-  <label for="bio">Bio:</label>
-    <textarea id="bio" name="user_bio" />
+    <label for={props.id}>{props.text}</label>
+    <textarea {...props} />
   </div>
 )
 
-export const Select = (props) => (
-  <div>
-    <label for="job">Job Role:</label>
-    <select id="job" name="user_job">
-      <optgroup label="Web">
-        <option value="frontend_developer">Front-End Developer</option>
-        <option value="php_developer">PHP Developer</option>
-        <option value="python_developer">Python Developer</option>
-        <option value="rails_developer">Rails Developer</option>
-        <option value="web_designer">Web Designer</option>
-        <option value="wordpress_developer">Wordpress Developer</option>
-      </optgroup>
-      <optgroup label="Mobile">
-        <option value="android_developer">Android Developer</option>
-        <option value="ios_developer">IOS Developer</option>
-        <option value="mobile_designer">Mobile Designer</option>
-      </optgroup>
-      <optgroup label="Business">
-        <option value="business_owner">Business Owner</option>
-        <option value="freelancer">Freelancer</option>
-      </optgroup>
-    </select>
-  </div>
-)
+export const SelectGroup = (props) => {
+  const { items } = props;
+  delete props.items;
+  return (
+    <div>
+      <label for={props.id}>{props.text}</label>
+      <select {...props}>
+        {items.map((item) => (
+          <optgroup label={item.name}>
+            {item.options.map((option) => (
+              <option value={option.value}>{option.text}</option>
+            ))}
+          </optgroup>
+        ))}
+      </select>
+    </div>
+  )
+}
 
 export const Radios = (props) => (
   <div>
